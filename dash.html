@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="./js/dash.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-[#19191A] h-screen">
+    <header class="h-24 flex justify-between items-center p-12 border-b-4 border-[#335aa4]">
+        <h1 class="text-[#e00000] text-3xl">ACMEFILMES</h1>
+        <div class="h-12 flex items-center gap-5">
+            <div class="flex bg-[#335aa4] rounded-l-3xl items-center h-full">
+                <i class='bx bx-search-alt-2 text-[#e00000] font-bold text-3xl ml-3'></i>
+                <input type="text" name="text" class=" py-3 pl-3 bg-[#335aa4] outline-none h-full text-lg font-bold" >
+            </div>
+            <button class="bg-[#335aa4] p-3 text-center text-[#e00000] rounded-r-3xl h-full flex items-center font-bold" id="add">
+                <i class=' bx bx-plus font-bold text-center text-3xl text-[#e00000]'></i>
+                ADD NEW
+            </button>
+        </div>
+    </header>
+    <main class="h-5/6 w-full">
+        <div class="h-20 border-b-4 border-[#335aa4] grid grid-cols-4 place-items-center">
+            <h1 class="text-[#e00000]  text-3xl h-full flex items-center">ID</h1>
+            <div class="text-[#e00000]  text-3xl h-full flex items-center">PRODUTO</div>
+            <div class="text-[#e00000]  text-3xl h-full flex items-center">VALOR</div>
+            <div class="text-[#e00000]  text-3xl h-full flex items-center">AÇÃO</div>
+        </div>
+        <div id="container">
+
+        </div>
+
+        
+    </main>
+
+
+
+</body>
+
+</html>
